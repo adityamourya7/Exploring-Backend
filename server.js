@@ -1,5 +1,8 @@
-const app = require("./src/app");
+const app = require("./src/app.js");
+const connectDB = require("./src/db/db.js");
+
+connectDB();
 
 app.listen(3000, () => {
-    console.log("Server Running on port 3000");
+    console.log("Server started on port 3000");
 })
